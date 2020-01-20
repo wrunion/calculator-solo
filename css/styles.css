@@ -1,0 +1,13 @@
+#calc-grid {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+
+#header {
+  text-align: center;
+  margin-top: 1em;
+  padding-bottom: 1em;
+  /* The following rule does exactly what I want it to (displays the header the right size) but seems like VERY bad practice. Note to self: do more research or ask around best practices for sizing headers. */
+  font-size: 2.5em;
+}
