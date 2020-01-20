@@ -11,3 +11,13 @@
   /* The following rule does exactly what I want it to (displays the header the right size) but seems like VERY bad practice. Note to self: do more research or ask around best practices for sizing headers. */
   font-size: 2.5em;
 }
+
+/* Possibly create button borders? Need more specific selectors to override Semantic UI's classes */
+/* .button {
+  border-style: solid;
+  border-width: 1em;
+} */
+
+#calc-grid button {
+  margin: -.25em;
+}
