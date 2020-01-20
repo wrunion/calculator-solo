@@ -1,6 +1,6 @@
-#calc-grid {
-  padding-left: 2em;
-  padding-right: 2em;
+#calc-all {
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 
@@ -20,4 +20,8 @@
 
 #calc-grid button {
   margin: -.25em;
+}
+
+#num-input {
+  text-align: right;
 }
