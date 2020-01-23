@@ -1,13 +1,25 @@
-
-function addtoFirstArray() {
-  //use "this" to get the info from the button, and then push it to firstArray.
+//Business Logic
+const add = function(num1, num2) {
+  return num1 + num2;
 }
 
-let firstArray = [];
-let secondArray = [];
+const subtract = function(num1, num2) {
+  return num1 - num2;
+}
+const multiply = function(num1, num2) {
+  return num1 * num2;
+}
+const divide = function(num1, num2) {
+  return num1 / num2;
+}
 
-//UI logic
+const remainder = function(num1, num2) {
+  return num1 % num2;
+}
 
-$("#button-id").on("click").addToFirstArray();
-$("#button-id").on("click").addToSecondArray();
 
+// UI Logic 
+$(document).ready(function() {
+
+
+});

@@ -1,3 +1,4 @@
+
 #header {
   text-align: center;
   margin-top: 1em;
@@ -29,4 +30,8 @@
 
 #num-input {
   text-align: right;
+}
+
+.operand {
+  font-weight: bolder;
 }
