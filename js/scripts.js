@@ -18,13 +18,6 @@ const remainder = function(num1, num2) {
   return num1 % num2;
 }
 
-//Retrieve value of button when pressed
-  // $("button").on(click(function(){
-  //   let buttonValue = ($(this)).val();
-  //   console.log(buttonValue;)
-  // });
-
-
 //Push that value into an array
 let arrToCalculate = [];
 let stringToCalculate = 0;

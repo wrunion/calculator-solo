@@ -28,6 +28,10 @@
   /* box-shadow: 0em 0.2em 0em inset; */
 }
 
+#clear {
+  text-align: center;
+}
+
 #num-input {
   text-align: right;
 }

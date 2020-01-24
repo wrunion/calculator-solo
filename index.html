@@ -28,7 +28,7 @@
 
   <!-- Custom scripts and stylesheet -->
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts2.js"></script>
 
 </head>
 <body>
@@ -40,14 +40,6 @@
  
     <!-- Grid start -->
     <div class="ui four column grid" id="calc-grid">
-      <!-- Input. Commented out for now bc I can't get it to stretch across the grid, the way bootstrap's "form-control" class would.-->
-        <!-- <div class="stretched-row">
-          <div class="column">
-          <div class="ui input focus">
-            <input type="text">
-          </div>
-        </div>
-      </div> -->
       <div class="stretched row">
         <!-- <div class="column">
           <button class="huge ui blue button">1</button>
@@ -84,10 +76,10 @@
             <button class="huge ui blue button" id="7" value="7">7</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">8</button>
+            <button class="huge ui blue button" id="8" value="8">8</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">9</button>
+            <button class="huge ui blue button" id="9" value="9">9</button>
           </div>
           <div class="column">
             <button class="huge ui blue basic button operand" id="remainder" value="remainder">%</button>
@@ -96,16 +88,16 @@
         <!-- Third row -->
         <div class="stretched row">
           <div class="column">
-            <button class="huge ui blue button">4</button>
+            <button class="huge ui blue button" id="4" value="4">4</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">5</button>
+            <button class="huge ui blue button" id="5" value="5">5</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">6</button>
+            <button class="huge ui blue button" id="6" value="6">6</button>
           </div>
           <div class="column">
-            <button class="huge ui blue basic button">⌫</button>
+            <button class="huge ui blue basic button" id="backspace" value="backspace">⌫</button>
           </div>
         </div>
         <!-- Fourth row -->
@@ -126,16 +118,16 @@
         <!-- Fifth row -->
         <div class="stretched row">
           <div class="column">
-            <button class="huge ui blue button">0</button>
+            <button class="huge ui blue button" id="0" value="0">0</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">.</button>
+            <button class="huge ui blue button" id="." value=".">.</button>
           </div>
           <!-- <div class="column">
             <button class="huge ui blue button">1</button>
           </div> -->
           <div class="eight wide column">
-            <button type="submit" class="huge ui blue button">=</button>
+            <button type="submit" class="huge ui blue button" id="calculate" value="calculate">=</button>
           </div>
         </div>
     
