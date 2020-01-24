@@ -1,8 +1,3 @@
-#calc-grid {
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
 
 #header {
   text-align: center;
@@ -12,7 +7,17 @@
   font-size: 2.5em;
 }
 
-/* Possibly create button borders? Need more specific selectors to override Semantic UI's classes */
+#calc-all {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+#calc-grid {
+  padding: .5em;
+}
+
+
+/* Possibly create button borders? Or a box shadow?*/
 /* .button {
   border-style: solid;
   border-width: 1em;
@@ -20,4 +25,21 @@
 
 #calc-grid button {
   margin: -.25em;
+  /* box-shadow: 0em 0.2em 0em inset; */
 }
+
+#clear {
+  text-align: center;
+}
+
+#num-input {
+  text-align: right;
+}
+
+.operand {
+  font-weight: bolder;
+}
+
+/* .numbers-and-operators {
+  color: black;
+} */

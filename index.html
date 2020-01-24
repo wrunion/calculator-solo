@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ADD FAVICON -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Epicodus Boilerplate</title>
+  <title>Winter's Calculator</title>
 
   <!-- Bootstrap CDN -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
@@ -34,178 +35,100 @@
   <div class="container">
   <h1 id="header">Winter's Calculator</h1>
 
+  <div class="ui raised segment" id="calc-all">
   <form id="calculator">
  
     <!-- Grid start -->
     <div class="ui four column grid" id="calc-grid">
-      <!-- Input. Commented out for now bc I can't get it to stretch across the grid, the way bootstrap's "form-control" class would.-->
-        <!-- <div class="stretched-row">
-          <div class="column">
-          <div class="ui input focus">
-            <input type="text">
-          </div>
-        </div>
-      </div> -->
+      <div class="stretched row">
+        <!-- Input text box -->
+        <div class="sixteen wide column">
+        <div class="ui segment">
+        <div class="ui input huge fluid focus">
+        <input type="text" id="input" placeholder="0"">
+      </div>
+    </div>
+    </div>
+      </div>
         <!-- First row -->
         <div class="stretched row">
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue basic button operand numbers-and-operators" id="add" value="+">+</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue basic button operand numbers-and-operators" id="subtract" value="-">-</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue basic button operand numbers-and-operators" id="multiply" value="*">x</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue basic button numbers-and-operators" id="divide" value="/">÷</button>
           </div>
         </div>
         <!-- Second row -->
         <div class="stretched row">
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue button numbers-and-operators" id="7" value="7">7</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue button numbers-and-operators" id="8" value="8">8</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue button numbers-and-operators" id="9" value="9">9</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue basic button operand numbers-and-operators" id="remainder" value="%">%</button>
           </div>
         </div>
         <!-- Third row -->
         <div class="stretched row">
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue button numbers-and-operators" id="4" value="4">4</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue button numbers-and-operators" id="5" value="5">5</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue button numbers-and-operators" id="6" value="6">6</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button type="button" class="huge ui blue basic button" id="backspace" value="backspace" disabled>⌫</button>
           </div>
         </div>
         <!-- Fourth row -->
         <div class="stretched row">
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue button numbers-and-operators" name="1" value="1" id="button1">1</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue button numbers-and-operators" id="2" value="2">2</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue button numbers-and-operators" id="3" value="3">3</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue basic button" id="clear" value="clear">Clear</button>
           </div>
         </div>
         <!-- Fifth row -->
         <div class="stretched row">
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue button numbers-and-operators" id="0" value="0">0</button>
           </div>
           <div class="column">
-            <button class="huge ui blue button">1</button>
+            <button class="huge ui blue button numbers-and-operators" id="." value=".">.</button>
           </div>
-          <div class="column">
-            <button class="huge ui blue button">1</button>
-          </div>
-          <div class="column">
-            <button class="huge ui blue button">1</button>
+          <!-- Submit button -->
+          <div class="eight wide column">
+            <button type="submit" class="huge ui blue button" id="calculate" value="equals">=</button>
           </div>
         </div>
-        <!-- <div class="stretched row">
-          <div class="column">
-            <button class="ui blue button">1</button>
-          </div>
-          <div class="column">
-            <button class="ui blue button">1</button>
-          </div>
-          <div class="column">
-           <button class="ui blue button">1</button>
-          </div>
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-        </div>
-        <div class="stretched row">
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-        </div>
-        <div class="stretched row">
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-        </div>
-        <div class="stretched row">
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui segment">
-              1
-            </div>
-          </div> -->
+    
         </div>    
           </div>
         </div>
       </div>
+    </div>
       
   </div>
   </form>
