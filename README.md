@@ -1,41 +1,33 @@
-# _{Application Name}_
+# _JavaScript Calculator_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _An Epicodus exercise in JavaScript and jQuery, 1.24.20_
 
-#### By _**{List of contributors}**_
+#### By _**Winter Runion**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+This is a simple web app  calculator that runs on both vanilla JS and jQuery logic. My next step is to refactor the scripts to be pure vanilla JS.
 
-## Setup/Installation Requirements
+_Please note: this application currently only works if you chose the "happy path" (ie, enter a number, and then an operator, and then another number, and so on.) If you do that, it will alert the correct caluation of your results!_
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+## To Use
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+This project is in progress. The calculator currently only supports "happy path" operations. If you press multiple operators in succession, for example, it won't work. My next step is to account for all edge cases. 
 
-## Support and contact details
+The app also only "alerts" your answers at the moment. My other next step is to implement DOM manipulation so that the input displays the input and calculations as you go.
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* HTML, CSS, JavaScript, jQuery
+* CSS library: [Semantic UI](https://semantic-ui.com/)
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+This software is licensed under the MIT license.
 
-_NOTE: An open source license details how others can use your code. MIT and GPL are the most common licenses. An MIT license means your code is free to use by anyone and you are not liable (Rails and jQuery use an MIT license). GPL also indicates free usage of the code but when used, the resulting work MUST be open source (Linux, Git and Wordpress use GPL)._
-
-_For additional details on choosing a license for your code, visit GitHub's [Choose a License site](https://choosealicense.com/)._
-
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **_Winter Runion_**
