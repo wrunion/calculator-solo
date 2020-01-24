@@ -34,6 +34,8 @@ const calculate = function(numStr1, numStr2, operand) {
   }
 }
 
+//first click
+
 
 //Initialize an empty array and an empty string to push the values into
 let returnArray = [];
@@ -41,6 +43,7 @@ let returnString = "";
 
 let num1 = "";
 let num2 = "";
+let operand = "";
 
 let numRegex = /\d|./;
 
@@ -48,11 +51,32 @@ $(document).ready(function() {
   let counter = 0;
 
   $("#calc-grid").on("click", "button", function() {
+
+    //USE JQUERY METHOD hasClass() TO SEE IF IT'S A NUMBER OR NOT!!!!!!!
+
     event.preventDefault();
     let buttonValue = $(this).val();
 
-    //if buttonValue if a number && counter === 0 : += to num1 string
-    // 
+    switch(buttonValue) {
+      case 0
+
+    } 
+
+    //If buttonValue != [0-9] {
+      //Say to the user: "Please enter a number to begin your calculations:"
+      //Or: do nothing
+    //} else if {
+    //If (buttonValue is a number or decimal && counter === 0) {
+      // num1 += buttonValue;
+    //Display Parseint(num1) in input;
+  //} else if (counter > 0) {
+      //if it's a number, concatinate it to first number string
+
+      //If it's an operand, value = operand;
+  }
+
+  //if (buttonValue )
+    
 
     //console.log(buttonValue);
     returnArray.push(buttonValue);
