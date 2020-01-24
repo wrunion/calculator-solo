@@ -41,12 +41,7 @@
     <!-- Grid start -->
     <div class="ui four column grid" id="calc-grid">
       <div class="stretched row">
-        <!-- <div class="column">
-          <button class="huge ui blue button">1</button>
-        </div>
-        <div class="column">
-          <button class="huge ui blue button">1</button>
-        </div> -->
+        <!-- Input text box -->
         <div class="sixteen wide column">
         <div class="ui segment">
         <div class="ui input huge fluid focus">
@@ -97,7 +92,7 @@
             <button class="huge ui blue button numbers-and-operators" id="6" value="6">6</button>
           </div>
           <div class="column">
-            <button class="huge ui blue basic button" id="backspace" value="backspace">⌫</button>
+            <button type="button" class="huge ui blue basic button" id="backspace" value="backspace" disabled>⌫</button>
           </div>
         </div>
         <!-- Fourth row -->
@@ -123,9 +118,7 @@
           <div class="column">
             <button class="huge ui blue button numbers-and-operators" id="." value=".">.</button>
           </div>
-          <!-- <div class="column">
-            <button class="huge ui blue button">1</button>
-          </div> -->
+          <!-- Submit button -->
           <div class="eight wide column">
             <button type="submit" class="huge ui blue button" id="calculate" value="equals">=</button>
           </div>
