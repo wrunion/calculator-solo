@@ -57,10 +57,7 @@ $(document).ready(function() {
     event.preventDefault();
     let buttonValue = $(this).val();
 
-    switch(buttonValue) {
-      case 0
-
-    } 
+    
 
     //If buttonValue != [0-9] {
       //Say to the user: "Please enter a number to begin your calculations:"
